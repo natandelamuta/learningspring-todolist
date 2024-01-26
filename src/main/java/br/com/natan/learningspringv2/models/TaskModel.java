@@ -15,7 +15,7 @@ public class TaskModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true)
-    private long id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "user_id",nullable = false, updatable = false)
@@ -36,7 +36,7 @@ public class TaskModel {
         this.description = description;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
